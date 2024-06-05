@@ -5,10 +5,6 @@ const App = () =>  {
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [endDate, setEndDate] = useState<Date | null>(null);
 
-  const handleDateChange = (date: Date) => {
-    console.log('Selected date:', date);
-  };
-
   const handleRangeChange = (start: Date | null, end: Date | null) => {
     setStartDate(start);
     setEndDate(end);
@@ -21,7 +17,6 @@ const App = () =>  {
       <DateRangePicker 
         startDate={startDate}
         endDate={endDate}
-        onDateChange={handleDateChange}
         onRangeChange={handleRangeChange}
       />
     </div>

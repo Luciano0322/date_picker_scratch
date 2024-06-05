@@ -7,14 +7,14 @@ import { FC } from "react";
 interface DateRangePickerProps {
   startDate: Date | null;
   endDate: Date | null;
-  onDateChange: (date: Date) => void;
+  // onDateChange: (date: Date) => void; // Might think merge the date picker & date range together.
   onRangeChange: (start: Date | null, end: Date | null) => void;
 }
 
 const DateRangePicker: FC<DateRangePickerProps>  = ({
   startDate,
   endDate,
-  onDateChange,
+  // onDateChange,
   onRangeChange,
 }) => {
   const {currentMonth, prevMonth, nextMonth} = useMonth();
@@ -26,7 +26,7 @@ const DateRangePicker: FC<DateRangePickerProps>  = ({
         currentMonth={currentMonth} 
         startDate={startDate}
         endDate={endDate}
-        onDateChange={onDateChange}
+        // onDateChange={onDateChange}
         onRangeChange={onRangeChange}
         locale={zhTW}
       />

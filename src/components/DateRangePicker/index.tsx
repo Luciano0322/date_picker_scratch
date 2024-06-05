@@ -2,7 +2,7 @@ import PickerHead from "./PickerHead";
 import useMonth from "../../hooks/useMonth";
 import Calendar from "./Calendar";
 import { zhTW } from "date-fns/locale";
-import { FC } from "react";
+import React, { FC } from "react";
 
 interface DateRangePickerProps {
   startDate: Date | null;

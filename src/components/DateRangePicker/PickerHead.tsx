@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 import { zhTW } from "date-fns/locale";
-import { FC } from "react";
+import React, { FC } from "react";
 
 interface PickerHeadProps {
   currDate: Date;

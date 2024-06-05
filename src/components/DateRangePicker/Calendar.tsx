@@ -49,20 +49,22 @@ const Calendar: React.FC<CalendarProps> = ({
     let newEndDate = endDate;
 
     if (!newStartDate || (newStartDate && newEndDate)) {
+      // If no start date or both start and end dates are selected, set the start date
       newStartDate = day;
       newEndDate = null;
+    } else if (day >= newStartDate) {
+      // If the clicked date is same as or later than the start date, set it as the end date
+      newEndDate = day;
     } else {
-      if (day < newStartDate) {
-        newEndDate = newStartDate;
-        newStartDate = day;
-      } else {
-        newEndDate = day;
-      }
+      // If the clicked date is earlier than the start date, reset the start date
+      newStartDate = day;
+      newEndDate = null;
     }
 
     onRangeChange(newStartDate, newEndDate);
     onDateChange(day);
   };
+
 
   const isInRange = (day: Date) => {
     if (startDate && endDate) {

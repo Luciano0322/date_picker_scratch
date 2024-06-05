@@ -7,21 +7,21 @@ I use react day picker's examples as a reference. I think the question only need
 
 
 Structure
-/
-├── src/
-│   ├── components/
-│   │   ├── DateRangePicker
-│   │       ├── index.tsx
-│   │       ├── PickerHead.tsx
-│   │       ├── Calendar.tsx
-│   ├── utils/
-│   ├── App.js
-│   ├── index.js
-│   ├── index.css
-├── public/
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-├── README.md
-└── ...
+/  
+├── src/  
+│   ├── components/  
+│   │   ├── DateRangePicker  
+│   │       ├── index.tsx  
+│   │       ├── PickerHead.tsx  
+│   │       ├── Calendar.tsx  
+│   ├── utils/  
+│   ├── App.js  
+│   ├── index.js  
+│   ├── index.css  
+├── public/  
+├── package.json  
+├── tailwind.config.js  
+├── postcss.config.js  
+├── README.md  
+└── ...  
 
